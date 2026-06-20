@@ -96,7 +96,7 @@ export default function Contact ()  {
                 key={social.id}
                 href={social.url}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className={`p-3 rounded-xl border ${social.neon} bg-gray-900 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_20px_currentColor] flex items-center justify-center`}
               >
                 {social.icon}
@@ -124,8 +124,8 @@ export default function Contact ()  {
             </div>
             <div>
               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1">Your Contact Number</label>
-              <input { ...register("mobile",{required:"Mobile No Is Required"})}
-                type="text" 
+              <input { ...register("mobile",{required:"Mobile No Is Required", pattern: {value: /^\+?[0-9\s-]{7,15}$/, message: "Enter a valid phone number"}})}
+                type="tel" 
                 placeholder="+91 9876543210" 
                 className="w-full bg-[#0a0a0a] text-white px-5 py-4 rounded-xl border border-gray-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition duration-300" 
               />  {
