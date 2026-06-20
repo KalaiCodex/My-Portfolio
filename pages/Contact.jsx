@@ -80,7 +80,7 @@ export default function Contact() {
                 key={social.id}
                 href={social.url}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className={`p-3 rounded-xl border ${social.neon} bg-gray-900 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_20px_currentColor] flex items-center justify-center`}
               >
                 <social.icon size={22} />
@@ -104,8 +104,9 @@ export default function Contact() {
             />
             <FormField
               label="Your Contact Number"
+              type="tel"
               placeholder="+91 9876543210"
-              register={register("mobile", { required: "Mobile No Is Required" })}
+              register={register("mobile", { required: "Mobile No Is Required", pattern: { value: /^\+?[0-9\s-]{7,15}$/, message: "Enter a valid phone number" } })}
               error={errors.mobile}
             />
             <FormField

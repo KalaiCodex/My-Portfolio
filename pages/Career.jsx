@@ -50,7 +50,7 @@ const Career = () => (
         </div>
 
         <div className="flex flex-wrap gap-4 pt-6">
-          <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="flex items-center gap-3 bg-linear-to-r from-cyan-600 to-blue-600 text-white px-8 py-3 rounded-full font-bold hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:-translate-y-1 transition-all duration-300">
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-linear-to-r from-cyan-600 to-blue-600 text-white px-8 py-3 rounded-full font-bold hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:-translate-y-1 transition-all duration-300">
             Let&apos;s Connect
           </a>
           <a
