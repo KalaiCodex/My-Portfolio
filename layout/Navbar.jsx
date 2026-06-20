@@ -38,6 +38,7 @@ export default function Navbar() {
         <a
           href="/KalaiSelvan-Resume.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           download
           className="bg-white text-black px-5 py-2 rounded-lg font-bold text-xs tracking-widest hover:bg-cyan-400 transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.2)]"
         >
