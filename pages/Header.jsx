@@ -12,7 +12,7 @@ const scrollToNextSection = ()=>{
 
 }
 
-  return (
+return (
     <div className="relative min-h-screen w-full bg-[#050505] overflow-hidden flex items-center">
       
       {/* Background Neon Effects (Animated Glows) */}
@@ -54,7 +54,6 @@ const scrollToNextSection = ()=>{
             CONTACT ME
           </Link>
         </div>
-
       </div>
 
       {/* Scroll Down Indicator */}
@@ -62,7 +61,6 @@ const scrollToNextSection = ()=>{
         <div className="w-1 h-12 bg-linear-to-r from-cyan-500 to-transparent"></div>
         <span className="text-[10px] text-cyan-500 tracking-[0.3em] uppercase font-bold">Scroll</span>
       </div>
-
     </div>
   );
 };

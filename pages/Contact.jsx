@@ -38,7 +38,6 @@ export default function Contact ()  {
 
   // Social Links with Neon Colors
   const socialLinks = [
-    { id: 1, icon: <FaGithub size={22} />, url: "https://github.com/kalaiselvan-mern", color: "hover:bg-gray-700 shadow-cyan-500/20", neon: "border-gray-500 text-white" },
     { id: 2, icon: <FaLinkedin size={22} />, url: "https://www.linkedin.com/in/kalai-kalai", color: "hover:bg-blue-600 shadow-blue-500/20", neon: "border-blue-500 text-blue-400" },
     { id: 3, icon: <FaFacebook size={22} />, url: "https://www.facebook.com/share/18WvAZ15YF/", color: "hover:bg-blue-800 shadow-blue-700/20", neon: "border-blue-700 text-blue-500" },
     { id: 4, icon: <FaInstagram size={22} />, url: "https://www.instagram.com/chellakutty_kalai?igsh=ZzZ4ZmVyc2JoMnBz", color: "hover:bg-pink-600 shadow-pink-500/20", neon: "border-pink-500 text-pink-400" },
@@ -53,7 +52,6 @@ export default function Contact ()  {
       {/* Background Neon Glows */}
       <div className="absolute top-[-10%] right-[-10%] w-96 h-96 bg-blue-900/20 blur-[120px] rounded-full"></div>
       <div className="absolute bottom-[-10%] left-[-10%] w-96 h-96 bg-purple-900/20 blur-[120px] rounded-full"></div>
-
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 bg-[#0a0a0a] border border-white/10 p-8 md:p-12 rounded-3xl shadow-2xl z-10">
         
         {/* Left Side: Contact Information */}

@@ -44,7 +44,6 @@ export default function Navbar() {
           RESUME
         </a>
       </div>
-
       <div
         onClick={() => setNav(!nav)}
         className="cursor-pointer pr-4 z-60 text-cyan-400 md:hidden"

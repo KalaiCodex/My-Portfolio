@@ -13,7 +13,7 @@ const Skills = () => {
       skills: [
         "HTML5",  "Tailwind CSS",  "JavaScript", 
         "React.js",  "Zustand (State)", 
-        "TanStack Query", "Axios", "Socket.io"," Next Js"
+        "TanStack Query", "Axios"," Next Js"
       ],
     },
     {
@@ -22,7 +22,7 @@ const Skills = () => {
       boxStyle: "border-green-500/30 hover:border-green-400 hover:shadow-[0_0_30px_rgba(74,222,128,0.3)]",
       titleGlow: "text-green-400 drop-shadow-[0_0_10px_rgba(74,222,128,0.8)]",
       badgeStyle: "hover:border-green-400 hover:shadow-[0_0_15px_rgba(74,222,128,0.5)] hover:text-green-300",
-      skills: ["Node.js", "Express.js", "Mongoose"],
+      skills: ["Node.js", "Express.js", "Mongoose" , "prisma ORM", "python" , "fastapi","Socket.io"],
     },
     {
       title: "Database & Storage",
@@ -39,7 +39,7 @@ const Skills = () => {
       titleGlow: "text-purple-400 drop-shadow-[0_0_10px_rgba(192,132,252,0.8)]",
       badgeStyle: "hover:border-purple-400 hover:shadow-[0_0_15px_rgba(192,132,252,0.5)] hover:text-purple-300",
       skills: [
-        "Git & GitHub", "JWT (Auth)", "Postman", "Cloudflare", 
+        "Git & GitHub", "JWT (Auth)", "thunderclient", "Cloudflare",
         "Vercel", "Render"    ,  "Ui & Ux Desgin ", "Linux" ,"Type Script"
       ], 
     },

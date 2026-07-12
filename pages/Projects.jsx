@@ -5,12 +5,15 @@ const MyProjects = () => {
 const projects = [
   {
     id: 1,
-    title: "Studio-SyncPro",
-    description: "A high-performance SaaS platform designed for studios to manage their workflow and teams efficiently.",
-    features: ["Real-time Chat with Socket.io", "Role-Based Access Control (RBAC)", "Secure Auth with JWT", "File Storage via Cloudinary"],
-    tech: ["React", "Node.js", "MongoDB", "Tailwind", "Socket.io", "Zustand"],
-    link: "https://studio-sync-pro.vercel.app",
-    github: "https://github.com/kalaiselvan-mern/StudioSyncPro",
+    title: "CoreX Tools",
+    description: "CoreX Tools is a high-performance, multi-utility web application crafted by Kalai Creative Studio.",
+    features: [
+      "📱 QR Code Generator: Instantly convert any URL, text, or link into a high-quality, downloadable QR code.",
+      "✂️ AI Background Remover: A powerful AI-driven tool to remove backgrounds from images flawlessly in seconds.",
+    ],
+    tech: ["React", "Tailwind", "Python" ,  "Zustand"],
+    link: "https://corex-tools.vercel.app",
+    github: "https://github.com/kalaiselvan-mern/Corex-Tools",
     icon: <FaRocket className="text-cyan-400" />,
     glow: "border-cyan-500/30 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)]"
   },
@@ -19,7 +22,7 @@ const projects = [
     title: "Kalai-Creative-Studio",
     description: "A premium E-commerce solution for digital creators to showcase and sell their artistic works.",
     features: ["Seamless Payment Gateway", "Dynamic Product Catalog", "Admin Dashboard", "Order Tracking System"],
-    tech: ["MERN Stack", "Redux", "Express", "Stripe API", "Mongoose"],
+    tech: ["MERN Stack",  "Express", "shadcn" , "mongodb" , "cloudinary"],
     link: "https://kalai-creative-studio.vercel.app",
     github: "https://github.com/kalaiselvan-mern/Creative-Studio",
     icon: <FaFire className="text-purple-400" />,

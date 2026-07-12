@@ -10,7 +10,6 @@ const Career = () => {
       {/* Ambient Glow Effects */}
       <div className="absolute top-1/2 left-[-10%] w-125 h-125 bg-blue-900/10 blur-[150px] rounded-full pointer-events-none"></div>
       <div className="absolute bottom-0 right-[-5%] w-100 h-100 bg-purple-900/10 blur-[130px] rounded-full pointer-events-none"></div>
-
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center z-10">
         
         {/* Left Side: Profile Image with Neon Border */}
