@@ -8,29 +8,45 @@ export default function Contact ()  {
 
 
   const onSubmit = async (data)=>{
+   const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+   if (!accessKey) {
+     console.error("[Contact] VITE_WEB3FORMS_ACCESS_KEY is not configured.");
+     setResult("Form configuration error. Please try again later.");
+     return;
+   }
+
    setResult("Sending ⌛")
 
    const formData = new FormData ();
-   formData.append("access_key" , import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+   formData.append("access_key" , accessKey);
    formData.append("name" , data.name);
    formData.append("email" , data.email);
    formData.append("mobile", data.mobile)
    formData.append("message", data.message);
    try {
-     const respones =await fetch("https://api.web3forms.com/submit",
+     const response = await fetch("https://api.web3forms.com/submit",
       {
         method:"POST",
         body:formData
       } )
-      const resData =await respones.json();
+
+      if (!response.ok) {
+        console.error("[Contact] HTTP error:", response.status, response.statusText);
+        setResult(`Server error (${response.status}). Please try again later.`);
+        return;
+      }
+
+      const resData = await response.json();
       if (resData.success){
         setResult("Message Send Successfully 🔥");
         reset()
       } else {
-        setResult("Something Went Error 🛑")
+        console.error("[Contact] Submission rejected:", resData.message);
+        setResult(resData.message || "Something went wrong. Please try again.");
       }
    } catch (error) {
-    setResult("Error Sending Message", error)
+    console.error("[Contact] Failed to send message:", error);
+    setResult("Network error. Please check your connection and try again.");
    }
   }
 
