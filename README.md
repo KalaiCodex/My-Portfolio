@@ -37,5 +37,5 @@ Want to run this portfolio on your local machine? Follow these simple steps:
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/kalaiselvan-mern/My-Portfolio.git](https://github.com/kalaiselvan-mern/My-Portfolio.git)
+git clone [https://github.com/kalaiselvan-mern/My-Portfolio.git](https://github.com/KalaiCodex/My-Portfolio.git)
 cd My-Portfolio 
